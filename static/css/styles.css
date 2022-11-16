@@ -14,6 +14,63 @@ body {
   background-size: cover;
 }
 
+.button_auth {
+  /* Сбрасываем дефолтные стили */
+  border: none;
+  outline: none;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 16px;
+  /* Можно также использовать любые встроенные и кастомные шрифты, например, отсюда  */
+  font-family: Roboto, Verdana, Tahoma, sans;
+  /* Тут можно поэкспериментировать */
+  padding: 5px 150px;
+  border-radius: 50px;
+  color: #fff;
+}
+
+.button_login {
+   border: none;
+  outline: none;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 16px;
+  /* Можно также использовать любые встроенные и кастомные шрифты, например, отсюда  */
+  font-family: Roboto, Verdana, Tahoma, sans;
+  /* Тут можно поэкспериментировать */
+  padding: 5px 100px;
+  border-radius: 50px;
+  color: #fff;
+}
+
+
+.button_auth i {
+  margin-right: 4px;
+}
+.button_auth + .button_auth {
+  margin-left: 4px;
+}
+.button_auth.blue {
+  background: #2196F3;
+}
+.button_login.blue {
+  background: #2196F3;
+}
+
+.button_login.purple {
+  background: #9b59b6;
+}
+
+.double-border-button:hover:after {
+  border-color: #f1c40f;
+  width: calc(100% - 10px);
+  height: calc(100% + 10px);
+}
+
 .container {
   width: 100%;
   padding-top: 60px;
